@@ -22,4 +22,19 @@ fetch(url + "pizza")
         console.log("strArea:", searchedMeal.strArea)
         console.log("strMealThumb:", searchedMeal.strMealThumb)
         console.log("strInstructions", searchedMeal.strInstructions)
+        let count = 1
+        let ingredients = []
+        for(let i in searchedMeal) {
+            // console.log("i:", i)
+            let ingredient = ""
+            let measure = ""
+            if(i.startsWith("strIngredient") && searchedMeal[i]) {
+                // console.log("searchedMeal[i]",searchedMeal[i])
+                ingredient = searchedMeal[i]
+                measure =searchedMeal[`strMeasure` + count]
+                count += 1
+                ingredients.push(`${measure} ${ingredient}`)
+            }
+        }
+        console.log('ingredients', ingredients)
     })
