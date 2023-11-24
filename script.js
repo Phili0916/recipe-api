@@ -36,5 +36,24 @@ fetch(url + "pizza")
                 ingredients.push(`${measure} ${ingredient}`)
             }
         }
-        console.log('ingredients', ingredients)
+        
+        recipeResult.innerHTML = `
+        <img src=${searchedMeal.strMealThumb} />
+        <div class="recipe-details">
+            <h2>${searchedMeal.strMeal}</h2>
+            <h4>${searchedMeal.strArea}</h4>
+        </div>
+        <div id="ingredients-container">
+            <div id="recipe">
+                <button id="hide-recipe">X</button>
+                <pre id="instructions">${searchedMeal.strInstructions}</pre>
+            </div>
+            <button id="show-recipe">View Recipe</button>
+        </div>
+        `
+        const ingredientsContainer = document.getElementById("ingrediants-container")
+        let parent = document.createElement("ul")
+        const recipe = document.getElementById("recipe")
+        const hideRecipe = document.getElementById("hide-recipe")
+        const showRecipe = document.getElementById("show-recipe")
     })

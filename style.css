@@ -45,3 +45,61 @@ body {
         font-weight: 600;
         border-radius: 0.3em;
 }
+
+img {
+        display: block;
+        margin: 2em auto 0 auto;
+        width: 50%;
+}
+
+.recipe-details {
+        background-color: lemonchiffon;
+        position: relative;
+        text-align: center;
+        margin: -4.3em 0 0 0;
+        padding: 0.6em 0;
+}
+
+.recipe-details h2 {
+        font-size: 1.2em;
+        font-weight: 600;
+}
+
+.recipe-details h4 {
+        font-size: 1em;
+        font-weight: 400;
+}
+
+#recipe {
+        display: none;
+        position: absolute;
+        background-color: #ffff;
+        min-height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        border-radius: 0.6em;
+}
+
+#recipe pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        padding: 2em 1.2em 1.2em 1.2em;
+}
+
+#hide-recipe {
+        font-size: 1em;
+        position: relative;
+        width: 1.8em;
+        height: 1.8em;
+        background-color: lemonchiffon;
+        border: none;
+        top: 1.2em;
+        left: 90%;
+        border-radius: 0.3em;
+}
+
+/* #ingredients-container {
+
+} */
