@@ -70,6 +70,18 @@ img {
         font-weight: 400;
 }
 
+#show-recipe {
+        font-size: 1em;
+        font-weight: 600;
+        position: relative;
+        left: 75%;
+        padding: 0.9em 0.6em;
+        background-color: lemonchiffon;
+        border: none;
+        border-radius: 0.3em;
+        top: 1.5em;
+}
+
 #recipe {
         display: none;
         position: absolute;
@@ -86,6 +98,7 @@ img {
         white-space: pre-wrap;
         word-wrap: break-word;
         padding: 2em 1.2em 1.2em 1.2em;
+        
 }
 
 #hide-recipe {
@@ -100,6 +113,25 @@ img {
         border-radius: 0.3em;
 }
 
-/* #ingredients-container {
+ul {
+        font-size: 1em;
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.8em 1.1em;
+        padding: 1.2em 0 0 1.2em;
+}
 
-} */
+
+h3 {
+        text-align: center;
+        margin-top: 1.5em;
+        color: dodgerblue;
+}
+
+@media screen and (max-width: 500px) {
+        .container {
+                font-size: 14px;
+        }  
+}
+
