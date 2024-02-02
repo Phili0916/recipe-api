@@ -44,6 +44,7 @@ body {
         border: none;
         font-weight: 600;
         border-radius: 0.3em;
+        cursor: pointer;
 }
 
 img {
@@ -80,6 +81,7 @@ img {
         border: none;
         border-radius: 0.3em;
         top: 1.5em;
+        cursor: pointer;
 }
 
 #recipe {
@@ -111,6 +113,7 @@ img {
         top: 1.2em;
         left: 90%;
         border-radius: 0.3em;
+        cursor: pointer;
 }
 
 ul {
